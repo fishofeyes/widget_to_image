@@ -30,6 +30,8 @@ class WidgetToImage {
       configuration: ViewConfiguration(
         physicalConstraints:
             BoxConstraints(maxWidth: size.width, maxHeight: size.height),
+        logicalConstraints:
+            BoxConstraints(maxHeight: size.height, maxWidth: size.width),
         devicePixelRatio: devicePixelRatio,
       ),
       view: WidgetsBinding.instance.platformDispatcher.views.first,
